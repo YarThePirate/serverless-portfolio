@@ -1,3 +1,3 @@
-# serverless-portfolio
+# Matt Scola's Serverless Portfolio!
 
-Portfolio created from "Create a Serverless Portfolio with React" on A Cloud Guru
+Hello, swanky fellow! This is my professional portfolio! It uses AWS and ReactJS (and some nifty Python on the backend, but you can't see that).
