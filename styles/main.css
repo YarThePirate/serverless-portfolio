@@ -21,11 +21,13 @@
 */
 
 .background--skyBlue {
-  background-color: rgb(52, 152, 219);
+  /*background-color: rgb(52, 152, 219);*/
+  background-color: rgb(0, 38, 77);
 }
 
 .color--skyBlue {
-  color: rgb(52, 152, 219);
+  /*color: rgb(52, 152, 219);*/
+  color: rgb(0, 38, 77);
 }
 
 .color--cloud {
