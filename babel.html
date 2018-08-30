@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Babel Demo</title>
+        <style media="screen">
+            .errorBox {
+                border: 1px solid red;
+                background-color: #eebbbb;
+                margin: 1em;
+                padding: 2em;
+            }
+            
+            .hidden {
+                display: none;
+            }
+        </style>
+    </head>
+    <body>
+        <main>
+            </label><input type="text" id="name" placeholder="Wut yo naim?">
+            <button id="submit-info">CLEEK MEH</button>
+            <div id="content"></div>
+            <div id='errorBox' class='errorBox hidden'>Herro Yes enter prease a name prease flank you bye</div>
+        </main>
+        
+        <script src="https://unpkg.com/babel-standalone"></script>
+        <script type="text/babel" data-presets="latest">
+        
+            const getMessage = (name) => `Welcome to babbababababbaababel, ${name}!`;
+            const button = document.getElementById("submit-info");
+            const contentDiv = document.getElementById('content');
+            
+            button.addEventListener('click', (event) => {
+                let name = document.getElementById('name').value;
+                let errorBoxClasses = document.getElementById('errorBox').classList;
+                
+                contentDiv.textContent = "";
+                errorBoxClasses.add('hidden');
+                
+                if (name.length < 2) {
+                    errorBoxClasses.remove('hidden');
+                } else {
+                    document.getElementById('content').textContent = getMessage(name);
+                    errorBoxClasses.add('hidden');
+                }
+            })
+        
+        </script>
+    </body>
+</html>
