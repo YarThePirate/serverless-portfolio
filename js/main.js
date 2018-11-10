@@ -6,6 +6,8 @@ import ExampleWork from './example-work';
 const myWork = [
     {
         "title": "Cat Example",
+        "href": "",
+        "desc": "lorem ipsum craft Seattle etc etc",
         "image": {
             "desc": "Example screenshot of a project involving cats",
             "src": "images/example3.png",
@@ -13,7 +15,9 @@ const myWork = [
         }
     },
     {
-        "title": "Code Example",
+        "title": "Python (Data Sci) - Jupyter Notebook",
+        "href": "",
+        "desc": "Here is some more example text, you schmuck.",
         "image": {
             "desc": "Example screenshot of a project involving code",
             "src": "images/example1.png",
@@ -21,7 +25,9 @@ const myWork = [
         }
     },
     {
-        "title": "Chemistry Example",
+        "title": "Rust (Wasm) - Game of Life",
+        "href": "",
+        "desc": "My final example of an example of a description of an example.",
         "image": {
             "desc": "Example screenshot of a project involving chemistry",
             "src": "images/example2.png",
